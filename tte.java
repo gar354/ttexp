@@ -3,8 +3,7 @@ class TTE {
 		long[][] array = new long[rows][cols];
 		for (int row = 0; row < rows; row++) {
 			for (int col = 0; col < cols; col++) {
-				long value = (long)Math.pow((row * cols + col),exp);
-				array[row][col] = value;
+				array[row][col] = (long)Math.pow((row * cols + col),exp);
 			}
 		}
 		return array;
